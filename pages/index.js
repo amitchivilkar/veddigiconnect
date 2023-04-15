@@ -9,7 +9,7 @@ export default function Home() {
         <title>Ved Digital Connect</title>
       </Head>
       <Header />
-      <Footer
+      <Footer />
 
     </>
   )
