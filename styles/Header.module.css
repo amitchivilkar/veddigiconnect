@@ -1,8 +1,6 @@
 .header {
     display: grid;
     grid-template-columns: minmax(1.6rem, 1fr) repeat(10, minmax(0, 12rem)) minmax(1.6rem, 1fr);
-
-    justify-content: space-between;
 }
 
 .header > * {
