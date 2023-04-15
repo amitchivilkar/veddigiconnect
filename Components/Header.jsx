@@ -31,7 +31,7 @@ export default function Header() {
                        {menuList.map((menu) => ( 
                         <li key={menu.id}><Link href={menu.href}>{menu.name}</Link></li>
                        ))}
-                       <li className={styles.button}><Link href='/'>Let's Connect</Link></li>
+                       <li className={styles.button}><Link href='/'>Let&apos;s Connect</Link></li>
                     </ul>
                 </nav>
 
