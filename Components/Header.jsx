@@ -18,7 +18,8 @@ export default function Header() {
                     <Image 
                         src='logo.svg' 
                         width={133} 
-                        height={133} />
+                        height={133}
+                        alt='Logo Image' />
                 </Link></h1>
                 <div className={styles.toggle}>
                     <div></div>
