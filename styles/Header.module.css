@@ -2,7 +2,6 @@
     display: grid;
     grid-template-columns: minmax(1.6rem, 1fr) repeat(10, minmax(0, 12rem)) minmax(1.6rem, 1fr);
 
-    align-items: center;
     border-bottom: 1px solid #E7E7E7;
 }
 
@@ -99,8 +98,11 @@
     border-radius: 4px;
     color: #FFFF;
     font-weight: 600;
-    margin-left: 2rem;
+    margin-left: 0rem;
 }
+
+
+
 
 @media screen and (min-width: 768px) {
     .toggle,
@@ -138,6 +140,6 @@
     }
 
     .nav__list .button a {
-        margin-left: 0;
+        margin-left: 2rem;
     }
 }
