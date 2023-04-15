@@ -1,5 +1,5 @@
 export default function Footer() {
-    retun (
+    return (
         <>
             This is a footer section
         </>
