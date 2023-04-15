@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import styles from "../styles/Header.module.css";
+import { useState } from "react";
 
 
 export default function Header() {
@@ -11,7 +12,9 @@ export default function Header() {
         { id:4, name: "Blog", href: "/blog" },
         { id:5, name: "Contact", href: "/contact" }
     ]
-    return (
+
+    const [showToggleMenu, setShowToggleMenu] = useState(false);
+    return (  
         <>
             <header className={styles.header}>
                 <h1 className={styles.logo}><Link href='/'>
@@ -21,17 +24,17 @@ export default function Header() {
                         height={133}
                         alt='Logo Image' />
                 </Link></h1>
-                <div className={styles.toggle}>
+                <div className={showToggleMenu ? styles.toggleOpen : styles.toggle} onClick={()=> setShowToggleMenu(!showToggleMenu)}>
                     <div></div>
                     <div></div>
                     <div></div>
                 </div>
-                <nav>
+                <nav className={showToggleMenu ? styles.menuShow : styles.menu}>
                     <ul className={styles.nav__list}>
                        {menuList.map((menu) => ( 
                         <li key={menu.id}><Link href={menu.href}>{menu.name}</Link></li>
                        ))}
-                       <li className={styles.button}><Link href='/'>Let&apos;s Connect</Link></li>
+                       <li className={styles.button}><Link href='https://wa.me/919819133840?text=I%27m%20interested%20in%20web%20development' target='_blank' rel="noopener noreferrer">Let&apos;s Connect</Link></li>
                     </ul>
                 </nav>
 

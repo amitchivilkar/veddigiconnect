@@ -1,6 +1,8 @@
 .header {
     display: grid;
     grid-template-columns: minmax(1.6rem, 1fr) repeat(10, minmax(0, 12rem)) minmax(1.6rem, 1fr);
+
+    align-items: center;
 }
 
 .header > * {
@@ -9,9 +11,13 @@
 
 .logo {
     grid-column: 2 / 6;
+
+    z-index: 10;
 }
 
-.toggle {
+.toggle,
+.toggleOpen {
+    grid-column: 11/-2;
 
     height: 1.8rem;
     width: 1.8rem;
@@ -22,16 +28,67 @@
     cursor: pointer;
 }
 
-.toggle div {
+.toggle div,
+.toggleOpen div {
     display: block;
     width: 25px;
     height: 3px;
     background-color: #000;
     border-radius: 1px;
     transition: all .3s ease-in-out;
+    z-index: 10;
 }
 
-.button a {
+.toggleOpen div:nth-child(2) {
+    opacity: 0;
+}
+
+.toggleOpen div:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.toggleOpen div:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+.menu {
+    background-color: #EDEDED;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: calc(100vh);
+    text-align: center;
+    padding: 133px 0 2rem 0;
+    transition: all 0.3s;
+}
+
+.menuShow {
+    background-color: #EDEDED;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: calc(100vh);
+    text-align: center;
+    padding: 133px 0 2rem 0;
+    transition: all 0.3s;
+}
+
+.nav__list {
+    padding-top: 2rem;
+}
+
+.nav__list li {
+    padding: 1.2rem 0;
+}
+
+.nav__list li a {
+    color: #212121;
+    text-decoration: none;
+}
+
+.nav__list .button a {
     background-color: #FFA858;
     padding: 1.2rem 2.4rem;
     display: inline-block;
