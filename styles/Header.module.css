@@ -3,6 +3,7 @@
     grid-template-columns: minmax(1.6rem, 1fr) repeat(10, minmax(0, 12rem)) minmax(1.6rem, 1fr);
 
     align-items: center;
+    border-bottom: 1px solid #E7E7E7;
 }
 
 .header > * {
@@ -12,6 +13,8 @@
 .logo {
     grid-column: 2 / 6;
 
+    width: 100px;
+    height: 100px;
     z-index: 10;
 }
 
@@ -96,6 +99,7 @@
     border-radius: 4px;
     color: #FFFF;
     font-weight: 600;
+    margin-left: 2rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -133,5 +137,7 @@
         margin-right: 0;
     }
 
-
+    .nav__list .button a {
+        margin-left: 0;
+    }
 }
