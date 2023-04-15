@@ -15,7 +15,7 @@ export default function Header() {
         <>
             <header className={styles.header}>
                 <h1 className={styles.logo}><Link href='/'>
-                    <Image src="logo.svg" width={133} height={133} />
+                    <Image src='logo.svg' width={133} height={133} />
                 </Link></h1>
                 <div className={styles.toggle}>
                     <div></div>
