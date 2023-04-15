@@ -1,0 +1,42 @@
+.header {
+    display: grid;
+    grid-template-columns: minmax(1.6rem, 1fr) repeat(10, minmax(0, 12rem)) minmax(1.6rem, 1fr);
+}
+
+.header > * {
+    grid-column: 2 / -2;
+}
+
+.logo {
+    grid-column: 2 / 6;
+}
+
+.toggle {
+    grid-column: 6/8;;
+
+    height: 1.8rem;
+    width: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+
+.toggle div {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #000;
+    border-radius: 1px;
+    transition: all .3s ease-in-out;
+}
+
+.button a {
+    background-color: #FFA858;
+    padding: 1.2rem 2.4rem;
+    display: inline-block;
+    border-radius: 4px;
+    color: #FFFF;
+    font-weight: 600;
+}
