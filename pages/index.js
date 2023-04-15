@@ -1,5 +1,6 @@
 import Head from "next/head"
-import Header from "../components/Header"
+import Header from "@/components/Header"
+import Footer from "@/Components/Footer"
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
         <title>Ved Digital Connect</title>
       </Head>
       <Header />
+      <Footer
 
     </>
   )
