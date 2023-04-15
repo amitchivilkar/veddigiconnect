@@ -12,6 +12,7 @@
 .title {
     font-size: 3.2rem;
     margin-bottom: 1.8rem;
+    line-height: 3.2rem;
 }
 
 .text {
@@ -30,4 +31,6 @@
 
 .media {
     grid-column: 1 / -1;
+
+    padding-top: 2.4rem;
 }
