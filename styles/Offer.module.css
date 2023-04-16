@@ -1,6 +1,8 @@
 .offers {
     display: grid;
     grid-template-columns: minmax(1.6rem, 1fr) repeat(10, minmax(0, 12rem)) minmax(1.6rem, 1fr);
+
+    padding: 3rem 0;
 }
 
 .offers > * {
@@ -47,6 +49,9 @@
 }
 
 @media screen and (min-width: 768px) {
+    .offers {
+        padding: 6rem 0;
+    }
     .list {
         grid-template-columns: repeat(3, 1fr);
     }
