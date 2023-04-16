@@ -1,6 +1,7 @@
 .header {
     display: grid;
     grid-template-columns: minmax(1.6rem, 1fr) repeat(10, minmax(0, 12rem)) minmax(1.6rem, 1fr);
+    align-content: center;
 
     border-bottom: 1px solid #E7E7E7;
 }
@@ -28,6 +29,7 @@
     justify-content: space-between;
     transition: all .3s ease-in-out;
     cursor: pointer;
+    align-self: center;
 }
 
 .toggle div,
