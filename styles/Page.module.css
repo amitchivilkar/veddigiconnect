@@ -1,0 +1,23 @@
+.page {
+    display: grid;
+    grid-template-columns: minmax(1.6rem, 1fr) repeat(8, minmax(0, 12rem)) minmax(1.6rem, 1fr);
+
+    padding: 3rem 0;
+}
+
+.page > * {
+    grid-column: 2 / -2;
+}
+
+.heading {
+    padding-bottom: 2rem;
+}
+
+.article p {
+    padding-bottom: 1.8rem;
+    line-height: 1.6;
+}
+
+.article h3 {
+    padding-bottom: 1.6rem;
+}
