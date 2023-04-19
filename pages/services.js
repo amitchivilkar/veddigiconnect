@@ -14,8 +14,8 @@ export default function Services() {
 
                         <p>Your online presence & social profiles are your form of branding in this digital era This can create numerous benefits for you as a person and also for your business. Personal Branding is the process of marketing yourself and your career or business online. It's about getting people to know who you are, and what are your qualities, skills & expertise. Once they start to like & trust you they will eventually want to work with you or buy from you.  </p>
 
-                        <p>From networking opportunities to finding business leads, to increase your personal creditability, personal branding is extremely essential to succeed in today’s digital world.</p>
-                        
+                        <p>From networking opportunities to finding business leads, to increase your personal creditability, personal branding is extremely essential to succeed in today&apos;s digital world.</p>
+
                         <h3>Website Development</h3>
 
                         <p>Build your online identity with a user-friendly & smartly designed website. The website provides a solid digital foundation for your business and should be SEO optimized and properly integrated with Social Media. Be it a static website, interactive website,  blogging website, or data-driven E-Commerce Website our team will develop a website as per client & market requirements. </p>
@@ -47,8 +47,6 @@ export default function Services() {
                         <p>This is the most important part of digital marketing. Online lead generation means generating leads online by making use of various lead magnets like landing pages, Social Media Forms, Contests, and takeaways to name a few. Effective lead generation includes a deep understanding of your target audience's interest & mainly the pain points. Once these are fully understood you can develop further strategies that can attract your prospects naturally to your business or service thereby resulting in natural sales.</p>
 
                         <p>Personal Branding - In today’s digital world when our target audience is mostly available online browsing through social media or searching something on google it is important to build your personal brand online. No matter whether you are a professional having your own business or an actor, sportsperson, or politician, it's of utmost importance to develop your personal identity online.  </p>
-
-                        
 
                     </main>
                 </div>
